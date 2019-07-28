@@ -1,28 +1,55 @@
+import java.util.List;
 
-public class Circle {
-	Point centre;
+/* This is a component class. It extends abstract class Shapes.
+ * This class overrides some methods from its super class.
+ * @author Bhupendra
+ */
+public class Circle extends Shapes {
+	
+	// Instance variables.
 	int radius;
-	int area;
-	int perimeter;
-
-	public Circle() {
+	
+	// Constructor.
+	public Circle(Point startPoint, List<Integer> l) {
+		super(startPoint);
+		radius = l.get(0);
+		area = this.getArea();
+		perimeter = this.getPerimeter();
+		origin = this.getOrigin();
+		this.shapeType = ShapeType.CIRCLE.toString();
 	}
 	
-	public int getArea() {
-		perimeter =  2 * (int)Math.PI * radius;
+	/* This method calculates Area.
+	 * return Area.
+	 */
+	public double getArea() {
+		perimeter =  2 * (double)Math.PI * radius;
 		return 0;
 	}
 	
-	public int getPerimeter() {
-		area = (int)Math.PI * radius * radius;
-		return 0;
+	/* This method calculates Perimeter.
+	 * return Perimeter.
+	 */
+	public double getPerimeter() {
+		area = (double)Math.PI * radius * radius;
+		return perimeter;
 	}
 	
+	/* This method is used to locate Origin.
+	 * return Origin.
+	 */
 	public Point getOrigin() {
-		return centre;
+		return origin;
 	}
 	
-	public boolean isPointEnclosed() {
+	/* This method checks for a point is enclosed.
+	 * return true if given point is enclosed, false otherwise.
+	 */
+	public boolean isPointEnclosed(Point p) {
+		double distance = Math.pow((p.x - origin.x), 2) + Math.pow((p.x - origin.x), 2);
+		if(distance < radius)
+			return true;
+		else
 		return false;
 	}
 }
