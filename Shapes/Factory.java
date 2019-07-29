@@ -8,7 +8,6 @@ public class Factory {
 	// Creating Screen object.
 	public static Screen scn = new Screen();
 	
-	
 	/* This method creates shape object and places that shape on Screen.
 	 * @return true if shape is successfully placed on screen, false otherwise;
 	 */
