@@ -1,0 +1,11 @@
+Participating Entities:
+	1. User
+	2. Shopper
+	3. Administrator
+	4. Shipping Address
+	5. Product
+	6. Stock
+	7. Category
+	8. Sub-Category
+	9. Order
+	10. Shipment

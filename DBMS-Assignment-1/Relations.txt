@@ -1,0 +1,11 @@
+Relations:
+	1. A Store Front Application HAS many Users and Categories
+	2. A User IS A Shopper OR Administrator
+	3. A Shopper HAS many Shipping Addresses
+	4. A Category HAS Sub-Category AND Products
+	5. A Sub-Category HAS Products
+	6. A Shopper PLACES many Order
+	7. Many Orders HAVE many Products WHICH ARE IN Stock
+	8. Items in Order GETS Shipment
+	9. Shipment HAS Shipping Address
+	10. A administrator MANAGES many Stocks

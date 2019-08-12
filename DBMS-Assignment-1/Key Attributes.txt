@@ -1,0 +1,55 @@
+Key Attributes of the Entities: 
+	1. User : 
+		* Date Of Birth
+		* Phone number
+		* Name
+		* Email ID (Key Attribute)
+
+	2. Administrator : 
+		* Date Of Birth
+		* Phone number
+		* Name
+		* Email ID (Key Attribute)
+
+	3. Shopper : 
+		* Date Of Birth
+		* Phone number
+		* Name
+		* Email ID (Key Attribute)
+
+	4. Category : 
+		* Category ID (Key Attribute)
+		* Parent Category
+		* Category Name
+
+	5. Sub-Category : 
+		* Category ID (Key Attribute)
+		* Parent Category
+		* Category Name
+
+	6. Products : 
+		* Product Name
+		* Product ID (Key Attribute)
+		* Product Price
+		* Category ID
+		* Product Description
+
+	7. Stock : 
+		* Items in Stock
+		* Stock ID (Key Attribute)
+
+	8. Order : 
+		* Order Amount
+		* Order ID (Key Attribute)
+		* Order Status
+		* Order Date
+		* Number of Products
+	9. Shipment : 
+		* Shipping ID (Key Attribute)
+	
+	10. Shipping Address : 
+		* Area
+		* Address ID (Key Attribute)
+		* Country
+		* State
+		* City
