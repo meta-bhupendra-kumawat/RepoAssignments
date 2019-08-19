@@ -42,7 +42,7 @@ availability BOOLEAN NOT NULL
 
 -- Creating table for storing images.
 CREATE TABLE images (
-image_id INT PRIMARY KEY,
+image_id INT PRIMARY KEY AUTO_INCREMENT,
 P_id INT NOT NULL REFERENCES products(p_id),
 image_link VARCHAR(30) DEFAULT 'https//google.co.in/images'
 );
