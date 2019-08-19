@@ -64,10 +64,22 @@ INSERT INTO products_categories (`product_id`, `category_id`) VALUES (4, 2);
 INSERT INTO products_categories (`product_id`, `category_id`) VALUES (5, 3);
 INSERT INTO products_categories (`product_id`, `category_id`) VALUES (7, 3);
 
--- Inserting int shipping_address.
+-- Inserting into shipping_address.
 INSERT INTO shipping_address (`address_id`, `shopper_mail`, `country`, `state`, `postal_code`, `city`, `area`, `house_no`) VALUES (1, "bk9929@gmail.com", 'INDIA', 'RAJASTHAN', 302001, 'Jaipur', 'indira Bazar', 1900);
 INSERT INTO shipping_address (`address_id`, `shopper_mail`, `country`, `state`, `postal_code`, `city`, `area`, `house_no`) VALUES (2, "vinayPancholi@gmail.com", 'INDIA', 'RAJASTHAN', 302017, 'Jaipur', 'JAGATPURA', 256);
 INSERT INTO shipping_address (`address_id`, `shopper_mail`, `country`, `state`, `postal_code`, `city`, `area`, `house_no`) VALUES (3, "bk9929@gmail.com", 'INDIA', 'MAHARASHTRA', 202222, 'MUMBAI', 'DOMBIVILI', 702);
+
+-- Inserting into images.
+INSERT INTO images (`image_id`, `P_id`) VALUES (1, 2);
+INSERT INTO images (`image_id`, `P_id`) VALUES (2, 2);
+INSERT INTO images (`image_id`, `P_id`) VALUES (3, 2);
+INSERT INTO images (`image_id`, `P_id`) VALUES (4, 2);
+INSERT INTO images (`image_id`, `P_id`) VALUES (5, 2);
+INSERT INTO images (`image_id`, `P_id`) VALUES (6, 3);
+INSERT INTO images (`image_id`, `P_id`) VALUES (7, 3);
+INSERT INTO images (`image_id`, `P_id`) VALUES (8, 3);
+
+
 
 -- Query#2 : Write a command to display all the table names present in StoreFront.
 SHOW TABLES;
