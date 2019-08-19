@@ -78,7 +78,12 @@ ALTER TABLE order_items DROP FOREIGN KEY order_items_ibfk_2;
 DROP TABLE products;
 
 -- Query#4 : Create the  Product  table again.
-ROLLBACK TO sp1;
+CREATE TABLE products (
+p_id INT PRIMARY KEY,
+p_Name VARCHAR(30) NOT NULL,
+p_Price DECIMAL(7,2) NOT NULL,
+availability BOOLEAN NOT NULL
+);
 
 -- Extra Queries.
 SELECT * from products;
