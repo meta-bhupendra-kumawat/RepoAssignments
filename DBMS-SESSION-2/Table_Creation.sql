@@ -38,7 +38,6 @@ p_id INT PRIMARY KEY,
 p_Name VARCHAR(30) NOT NULL,
 p_Price DECIMAL(7,2) NOT NULL,
 availability BOOLEAN NOT NULL
--- FOREIGN KEY(image_id) REFERENCES images(image_id)
 );
 
 -- Creating table for storing images.
