@@ -73,8 +73,7 @@ INSERT INTO shipping_address (`address_id`, `shopper_mail`, `country`, `state`, 
 SHOW TABLES;
 
 -- Query#3 : Write a command to remove  Product  table of the StoreFront database.
-SAVEPOINT sp1;
-ALTER TABLE order_items DROP FOREIGN KEY order_items_ibfk_2;
+SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE products;
 
 -- Query#4 : Create the  Product  table again.
