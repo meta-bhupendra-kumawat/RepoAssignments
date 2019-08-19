@@ -1,8 +1,8 @@
 -- Creating database.
-CREATE DATABASE Shop_front;
+CREATE DATABASE Store_front;
 
 -- Using database.
-USE shop_front;
+USE Store_front;
 
 -- Creating table user.
 CREATE TABLE User (
