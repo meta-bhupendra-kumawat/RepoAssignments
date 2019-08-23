@@ -48,13 +48,11 @@ public class PriorityQueue implements PriorityQueueInterface  {
 		
 		int maxPriority = Integer.MIN_VALUE;
 		int maxPriorityIndex = front;
-		int i = front;
-		while(i != rear + 1) {
+		for(int i = front; i < rear + 1; i++) {
 			if(queue[i].getPriority() > maxPriority) {
 				maxPriority = queue[i].getPriority();
 				maxPriorityIndex = i;
 			}
-			i = (i + 1) % size;
 		}
 		Job a = this.queue[maxPriorityIndex];
 		
