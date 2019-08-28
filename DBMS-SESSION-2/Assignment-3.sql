@@ -17,7 +17,7 @@ AND order_items.ordr_status = "PENDING";
 
 -- Query#4 : Display list of shoppers which haven't ordered anything since last month. 
 SELECT * FROM  user 
-WHERE email_id = 
+WHERE email_id IN 
 (SELECT shopper_mail 
 FROM  orders 
 WHERE MONTH(order_timestamp) < MONTH(current_date()) 
