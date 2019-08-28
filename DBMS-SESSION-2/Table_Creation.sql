@@ -5,7 +5,7 @@ CREATE DATABASE Store_front;
 USE Store_front;
 
 -- Creating table user.
-CREATE TABLE User (
+CREATE TABLE user (
 email_id VARCHAR(30) NOT NULL,
 Name VARCHAR(30) NOT NULL,
 DOB DATE,
