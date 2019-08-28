@@ -3,9 +3,9 @@ Participating Entities:
 	2. Shopper
 	3. Administrator
 	4. Shipping Address
-	5. Product
-	6. Stock
-	7. Category
-	8. Sub-Category
-	9. Order
+	5. Products
+	6. Products_categories
+	7. Categories
+	8. Orders
+	9. Order_items
 	10. Shipment
