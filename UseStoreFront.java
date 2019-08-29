@@ -42,6 +42,8 @@ public class UseStoreFront {
 		System.out.println("------------------------------------------------------");
 		for(TopCategory tc : topCatList)
 			System.out.format("\n%12s%15s\n" ,tc.getCategoryName(), tc.getNumberOfChilds());
-
+		
+		// Closing all active connections.
+		sf.closeAll();
 	}
 }
