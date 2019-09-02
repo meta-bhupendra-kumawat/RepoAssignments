@@ -1,5 +1,5 @@
 var i = 0;
- const CURRENCY = {
+const CURRENCY = {
      TOINR : 71.15,
      TOJPY : 106.29 
  }
