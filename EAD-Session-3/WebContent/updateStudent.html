@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Student.</title>
+<script src="main.js"></script>
+</head>
+<body>
+	<div align="center">
+		<form action="./showAllStudent" method="GET" onsubmit="fullValidate()">
+			<h1>Add Student</h1>
+			<br> <input id="id" name="id" type='text' 
+				 size=40% readonly> <br>
+			<br> <br> <input id="first_name" name='first_name' type='text'
+				placeholder="First Name" size=40%>
+				<br><label id="first_name-error" size=40%></label>
+			<br> <input id="last_name" name="last_name" type='text' placeholder="Last Name"
+				size=40%>
+				<br><label id="last_name-error" size=40%></label>
+			<br> <input id="father_name" name="father_name" type='text'
+				placeholder="Father's Name" size=40%>
+				<br><label id="first_name-error" size=40%></label>
+			<br> <input id="email" name="email" type='email' placeholder="E-mail"
+				size=40%> <br>
+			<br> <input id="class" name="class" type='number' placeholder="Class"
+				min="1" max="12" size=40%> <br>
+			<br> <br></br> <input id="age" name="age" type="number" placeholder="Age"
+				min="3" max="23" size=40%> <br>
+			<br> <input type="submit" value="Update">
+		</form>
+	</div>
+</body>
+</html>

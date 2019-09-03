@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>EAD-Session-3</display-name>
+  <servlet>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <servlet-class>com.metacube.servlets.AddStudentDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchStudentServlet</servlet-name>
+    <servlet-class>com.metacube.servlets.SearchStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchStudentServlet</servlet-name>
+    <url-pattern>/searchStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ShowAllStudentServlet</servlet-name>
+    <servlet-class>com.metacube.servlets.ShowAllStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowAllStudentServlet</servlet-name>
+    <url-pattern>/showAllStudent</url-pattern>
+  </servlet-mapping>
+</web-app>

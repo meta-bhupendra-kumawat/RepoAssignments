@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Student</title>
+<script src="ValidateStudent.js"></script>
+</head>
+<body>
+ <div  align="center">
+        <form action="./addStudent" method="GET" onsubmit="return fullValidate()">
+        	<h1>Add Student</h1>
+    		<br>
+    		<br>
+            <input id='first_name' name='first_name' type='text' placeholder="First Name" size=40% onchange="validateFirstName()">
+            <br><label id="first_name-error" size=40%></label>
+            <br>
+            <input id="last_name" name="last_name" type='text' placeholder="Last Name" size=40% onchange="validateLastName()">
+            <br><label id="last_name-error" size=40%></label>
+            <br>
+            <input id="father_name" name="father_name" type='text' placeholder="Father's Name" size=40% onchange="validateFatherName()">
+            <br><label id="father-name-error" size=40%></label>
+            <br>
+            <input id="email" name="email" type='email' placeholder="E-mail" size=40%>
+            <br><label id="email-error" size=40%></label>
+            <br>
+            <input id="class" name="class" type='number' placeholder="Class" min="1" max="12" size=40%>
+            <br><label id="class-error" size=40%></label>
+            <br>
+            <input id="age" name="age" type="number" placeholder="Age" min="3" max="23" size=40%>
+            <br><label id="age-error" size=40%></label>
+            <br>
+           	<input type="submit" value="Enroll Student">
+        </form>
+    </div>
+</body>
+</html>
