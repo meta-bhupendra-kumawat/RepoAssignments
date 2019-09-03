@@ -27,4 +27,9 @@ public class SQLConnection {
 	public static Connection getConnection() {
 		return connection;
 	}
+	
+	// This method closes the connection from the database.
+	public static void closeConnection() {
+		connection.close();
+	}
 }
