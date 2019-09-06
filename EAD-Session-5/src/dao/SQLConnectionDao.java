@@ -1,7 +1,8 @@
 package dao;
 import java.sql.*;
 
-/* This is a component class. This class provides connection from the database i.e MySQL.
+/**
+ * This is a component class. This class provides connection from the database i.e MySQL.
  * @author Bhupendra
  */
 public class SQLConnectionDao {
@@ -11,7 +12,7 @@ public class SQLConnectionDao {
 	
 	// Constructor.
 	static {
-		String url = "jdbc:mysql://localhost/DB_student";
+		String url = "jdbc:mysql://localhost/DB_shopping";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection(url, "root", "root");
@@ -26,5 +27,13 @@ public class SQLConnectionDao {
 	 */
 	public static Connection getConnection() {
 		return connection;
+	}
+	
+	public static void close() {
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }
