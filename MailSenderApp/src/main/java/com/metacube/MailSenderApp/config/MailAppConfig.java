@@ -24,7 +24,7 @@ public class MailAppConfig {
 	
 //	@Bean
 //	public MailSender smtpMailSender() {
-//		return new SmtpMailSender2();
+//		return new SmtpMailSender();
 //	}
 
 //	@Bean

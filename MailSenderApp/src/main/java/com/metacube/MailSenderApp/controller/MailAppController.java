@@ -14,6 +14,7 @@ import com.metacube.MailSenderApp.service.implementations.MockMailSender;
 @RestController
 public class MailAppController {
 
+	@Autowired
 	private MailSender mailSender;
 
 	/**
@@ -24,13 +25,23 @@ public class MailAppController {
 	@Autowired
 	private MockMailSender mck;
 
+	// Constructor.
+	@Autowired
 	public MailAppController(MailSender mailSender) {
 		this.mailSender = mailSender;
+		System.out.println("Constructor");
+	}
+
+	// Setter.
+	@Autowired
+	public void setMailSender(MailSender mailSender) {
+		this.mailSender = mailSender;
+		System.out.println("Setter");
 	}
 
 	// Mapping method call with the given url.
-	@RequestMapping("/welcome")
+	@RequestMapping("/sendmail")
 	public String display() {
-		return mck.send() + "  " + mailSender.send();
+		return mck.send() + "<br>" + mailSender.send();
 	}
 }
