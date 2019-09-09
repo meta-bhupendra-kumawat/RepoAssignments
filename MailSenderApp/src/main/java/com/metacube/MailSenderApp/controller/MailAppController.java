@@ -1,6 +1,7 @@
 package com.metacube.MailSenderApp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,7 @@ import com.metacube.MailSenderApp.service.implementations.MockMailSender;
 @RestController
 public class MailAppController {
 
-	@Autowired
+//	@Autowired
 	private MailSender mailSender;
 
 	/**
@@ -27,14 +28,14 @@ public class MailAppController {
 
 	// Constructor.
 	@Autowired
-	public MailAppController(MailSender mailSender) {
+	public MailAppController(@Qualifier("SmtpSender") MailSender mailSender) {
 		this.mailSender = mailSender;
 		System.out.println("Constructor");
 	}
 
 	// Setter.
 	@Autowired
-	public void setMailSender(MailSender mailSender) {
+	public void setMailSender(@Qualifier("SmtpSender")MailSender mailSender) {
 		this.mailSender = mailSender;
 		System.out.println("Setter");
 	}

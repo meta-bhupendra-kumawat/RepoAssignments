@@ -1,5 +1,6 @@
 package com.metacube.MailSenderApp.service.implementations;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -9,8 +10,9 @@ import com.metacube.MailSenderApp.service.MailSender;
  * This is a component class. It consists of implementation for MailSender interface.
  * @author Bhupendra.
  */
-@Primary
+//@Primary
 @Component
+@Qualifier("SmtpSender")
 public class SmtpMailSender implements MailSender {
 
 	@Override
