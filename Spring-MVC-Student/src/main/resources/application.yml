@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
+        
+home:
+  message: "Welcome to Student Management System!!"

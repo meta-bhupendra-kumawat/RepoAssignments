@@ -1,4 +1,4 @@
-package com.metacube.MailSenderApp;
+package com.example.SpringMVCStudent;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MailSenderAppApplicationTests {
+public class SpringMvcStudentApplicationTests {
 
 	@Test
 	public void contextLoads() {
