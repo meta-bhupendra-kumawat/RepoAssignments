@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Metacube Parking System</title>
+</head>
+
+<body>
+    <div>
+        <center>
+            <img src="image.jpg" alt="parking" width="100%" srcset="">
+        </center>
+    </div>
+
+    <div>
+        <h3>
+        <nav>
+            <a href="#employee">Add Employee</a> &thinsp;
+            <a href="#vehicle">Add Vehicle</a> &thinsp;
+            <a href="#feedback">Give feedback</a> &thinsp;
+            <a href="#pricing">Pricing</a>
+        </nav>
+    </h3>
+    </div>
+
+    <center>
+        <div id="employee">
+            <h3>Employee Registration From</h3>
+            <form action="" method="POST" onsubmit="return false">
+                <input id='fullname' type='text' placeholder="Full Name" name="Full Name" size=40%>
+                <br><label id="fullname-error" size=40%></label><br>
+                <label>Gender : </label>
+                <label><input type='radio' name='Gender' value="Male" checked>
+                    Male
+                </label>
+                <label><input type='radio' name='Gender' value="Female">
+                    Female
+                </label><br><br>
+                <input id='email' type='email' placeholder="Email@xyz.com" name="email" size=40%>
+                <br><label id="email-error" size=40%></label><br><br>
+                <input id='password' type='password' placeholder="Password" name="password" size=40%>
+                <br><label id="" size=40%></label><br><br>
+                <input id='confirmpassword' type='password' placeholder="Confirm password" name="password" size=40%>
+                <br><label id="password-error" size=40%></label><br><br>
+                <input id="contactnumber" type="text" placeholder="Contact Number" name="contactnumber" size=40%>
+                <br><label id="contactnumber-error" size=40%></label><br>
+                <input type="submit" name="Submit" onclick="">
+            </form>
+            <br>
+            <br>
+        </div>
+    </center>
+
+    <center>
+        <div id="vehicle">
+            <h3>Vehicle Registration From</h3>
+            <form action="" method="GET">
+                <input id='company' type='text' placeholder="Manufacturer (Company)" name="company" size=40%><br><br>
+                <input id='model' type='text' placeholder="Vehicle Model" name="model" size=40%><br><br>
+                <label> Type :
+                    <select id="vehicletype" name="vehicletype">
+                        <option value="Cycle" default>Cycle</option>
+                        <option value="Motor Cycle">Motor Cycle</option>
+                        <option value="Four Wheeler">Four Wheeler</option>
+                    </select>
+                </label>
+                <br></br>
+                <input id="vehicleno" type='text' placeholder="Vehicle Number" size=40%>
+                <br><br>
+                <input id="employeeid" type='text' placeholder="Employee Id" size=40%>
+                <br><br>
+                <textarea id="identification" type='textArea' placeholder="Identification" rows="2"
+                    cols="38"></textarea>
+                <br><br>
+                <button type="submit" onclick="">Register</button>
+            </form>
+            <br>
+            <br>
+        </div>
+    </center>
+
+    <center>
+        <div id="feedback">
+            <h3>Feedback Form</h3>
+            <form action="">
+                <input id="feedbackName" type="text" name="feedbackName" placeholder="Name" size=40%><br><br>
+                <input id="email" type="email" name="email" placeholder="Email" size=40%><br><br>
+                <input id="subject" type="text" name="subject" maxlength="30" placeholder="Subject" size=40%><br><br>
+                <textarea name="message" id="message" cols="38" rows="10" placeholder="Message"></textarea><br><br>
+                <button type="submit" onclick="">Send Email</button>
+            </form>
+        </div>
+        <br>
+        <br>
+    </center>
+
+    <div id="pricing">
+        <center>
+            <div id="cycle" class="plan">
+                <form action="">
+                    <h3>Cycle</h3>
+                    <strong>$100</strong><br>/month <br><br>
+                    $5 Daily <br>
+                    $100 Monthly <br>
+                    $500 Yearly <br> <br>
+                    <input type="submit" value="Purchase Now">
+                </form>
+            </div>
+            <br>
+
+            <div id="cycle" class="plan">
+                <form action="">
+                    <h3>Motor Cycle</h3>
+                    <strong>$200</strong><br>/month <br><br>
+                    $10 Daily <br>
+                    $200 Monthly <br>
+                    $1000 Yearly <br> <br>
+                    <input type="submit" value="Purchase Now">
+                </form>
+            </div>
+            <br>
+
+            <div id="fourWheeler" class="plan">
+                <form action="">
+                    <h3>Four Wheeler</h3>
+                    <strong>$500</strong><br>/month <br><br>
+                    $20 Daily <br>
+                    $500 Monthly <br>
+                    $3500 Yearly <br> <br>
+                    <input type="submit" value="Purchase Now">
+                </form>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
