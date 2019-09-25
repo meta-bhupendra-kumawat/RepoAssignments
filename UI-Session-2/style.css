@@ -1,5 +1,5 @@
 .collapsible {
-    background-color: rgb(24, 3, 121);
+    background-color: rgb(40, 18, 138);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -29,7 +29,6 @@
 }
   .content {
     padding: 0 18px;
-    /* max-height: 0; */
     display: none;
     overflow: hidden;
     background-color: white;
@@ -43,6 +42,8 @@
 .form-elements {
     margin: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    vertical-align: middle;
+
 }
 
 .input-border {
@@ -61,6 +62,7 @@ div, button {
 }
 
 .plan {
+    text-align: center;
     display: inline-block;
     border: 1.5px solid rgb(16, 80, 175);
     border-radius: 3px;
@@ -70,7 +72,7 @@ div, button {
 }
 
 .circle {
-    align-content: center;
+    margin: 0 auto;
     border: 2px solid rgb(16, 80, 175);
     height: 80px;
     width: 80px;
