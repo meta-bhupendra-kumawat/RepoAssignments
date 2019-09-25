@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Employee Form</title>
+        <link rel="stylesheet" href="style.css">
+      
+    </head>
+    <body>
+        
+            <button type="button" class="collapsible">Employee Details</button>
+            <div class="content" id="employeeReg" >
+                <form action="" method="POST" onsubmit="return false">
+                    <label for="fullname" class="form-elements">Full Name &emsp;</label>
+                    <input class="form-elements input-border" id='fullname' type='text' placeholder="Full Name" name="Full Name" size=40%>
+                    <br>
+                    <label class="form-elements" id="fullname-error" size=40%></label><br>
+                    <label class="form-elements">Gender : </label>
+                    <label class="form-elements"><input type='radio' name='Gender' value="Male" checked>
+                        Male 
+                    </label>
+                    <label class="form-elements"><input type='radio' name='Gender' value="Female">
+                        Female
+                    </label>
+                    <br><br>
+                    <label class="form-elements" for="fullname">Email &emsp;</label>
+                    <input class="form-elements input-border" id='email' type='email' placeholder="Email@xyz.com" name="email" size=40%><br>
+                    <label class="form-elements" id="email-error" size=40%></label>
+                    <br><br>
+                    <label class="form-elements" for="password">Password &emsp;</label>
+                    <input class="form-elements input-border" id='password' type='password' placeholder="Password" name="password" size=40%><br>
+                    <label class="form-elements" id="" size=40%></label>
+                    <br><br>
+                    <label class="form-elements" for="confirmpassword">Confirm Password &emsp;</label>
+                    <input class="form-elements input-border" id='confirmpassword' type='password' placeholder="Confirm password" name="password" size=40%>
+                    <br><label class="form-elements" id="password-error" size=40%></label>
+                    <br><br>
+                    <label class="form-elements" for="contactnumber">Contact Number &emsp;</label>
+                    <input class="form-elements input-border" id="contactnumber" type="text" placeholder="Contact Number" name="contactnumber" size=40%><br>
+                    <label class="form-elements" id="contactnumber-error" size=40%></label>
+                    <br><br>
+                    <input class="button" type="submit" name="Submit" onclick="">
+                </form>
+            </div>
+
+            <button type="button" class="collapsible">Vehicle Registration</button>
+            <div class="content" id="vehicle">
+                    <h3>Vehicle Registration From</h3>
+                    <form action="" method="GET">
+                        <label for="company" class="form-elements">Manufacturer &emsp;</label>
+                        <input class="form-elements input-border" id='company' type='text' placeholder="Manufacturer (Company)" name="company" size=40%>
+                        <br><br>
+                        <label for="model" class="form-elements">Model &emsp;</label>
+                        <input class="form-elements input-border" id='model' type='text' placeholder="Vehicle Model" name="model" size=40%><br><br>
+                        <label class="form-elements"> Type : &emsp;
+                            <select class="form-elements input-border" id="vehicletype" name="vehicletype">
+                                <option class="form-elements" value="Cycle" default>Cycle</option>
+                                <option class="form-elements" value="Motor Cycle">Motor Cycle</option>
+                                <option class="form-elements" value="Four Wheeler">Four Wheeler</option>
+                            </select>
+                        </label>
+                        <br></br>
+                        <label for="vehicleno" class="form-elements">Vehicle Number &emsp;</label>
+                        <input class="form-elements input-border" id="vehicleno" type='text' placeholder="Vehicle Number" size=40%>
+                        <br><br>
+                        <label for="employeeid" class="form-elements">Employee Id &emsp;</label>
+                        <input class="form-elements input-border" id="employeeid" type='text' placeholder="Employee Id" size=40%>
+                        <br><br>
+                        <label for="identification" class="form-elements">Identification &emsp;</label>
+                        <textarea class="form-elements input-border" id="identification" type='textArea' placeholder="Identification" rows="1"
+                            cols="38"></textarea>
+                        <br><br>
+                        <button class="button" type="submit" onclick="">Register</button>
+                    </form>
+                    <br>
+                </div>
+
+                <button type="button" class="collapsible">Feedback</button>
+                <div class="content" id="feedback">
+                        <h3>Feedback Form</h3>
+                        <form action="">
+                                <label for="feedbackName" class="form-elements">Name &emsp;</label>
+                            <input class="form-elements input-border" id="feedbackName" type="text" name="feedbackName" placeholder="Name" size=40%>
+                            <br><br>
+                            <label for="email" class="form-elements">Email &emsp;</label>
+                            <input class="form-elements input-border" id="email" type="email" name="email" placeholder="Email" size=40%>
+                            <br><br>
+                            <label for="subject" class="form-elements">Subject &emsp;</label>
+                            <input class="form-elements input-border" id="subject" type="text" name="subject" maxlength="30" placeholder="Subject" size=40%>
+                            <br><br>
+                            <label for="message" class="form-elements">Message &emsp;</label>
+                            <textarea class="form-elements input-border" name="message" id="message" cols="38" rows="10" placeholder="Message"></textarea><br><br>
+                            <button class="button" type="submit" onclick="">Send Email</button>
+                        </form>
+                    </div>
+                   
+                    <button type="button" class="collapsible">Plan</button>
+                    <div class="content" id="pricing">
+                                <div id="cycle" class="plan">
+                                    <form class="form-elements" action="">
+                                        <h3>Cycle</h3>
+                                        <div class="circle">
+                                                <br>
+                                        <strong>&emsp;$100</strong><br>&emsp;/month <br>
+                                        </div>
+                                        $5 Daily <br>
+                                        $100 Monthly <br>
+                                        $500 Yearly <br> <br>
+                                        <input type="submit" value="Purchase Now">
+                                    </form>
+                                </div>
+                                <!-- <br> -->
+                    
+                                <div id="cycle" class="plan">
+                                    <form class="form-elements" action="">
+                                        <h3>Motor Cycle</h3>
+                                        <div class="circle">
+                                                <br>
+                                        <strong>&emsp;$200</strong><br>&emsp;/month <br>
+                                        </div>
+                                        $10 Daily <br>
+                                        $200 Monthly <br>
+                                        $1000 Yearly <br> <br>
+                                        <input type="submit" value="Purchase Now">
+                                    </form>
+                                </div>
+                                <!-- <br> -->
+                    
+                                <div id="fourWheeler" class="plan">
+                                    <form class="form-elements" action="">
+                                        
+                                        <h3>Four Wheeler</h3>
+                                        <div class="circle">
+                                            <br>
+                                                <strong>&emsp;$500</strong><br>&emsp;/month <br>
+                                        </div>
+                                        $20 Daily <br>
+                                        $500 Monthly <br>
+                                        $3500 Yearly <br> <br>
+                                        <input type="submit" value="Purchase Now">
+                                    </form>
+                                </div>
+                            
+                        </div>
+
+            <script src="main.js"></script>
+    </body>
+</html>
