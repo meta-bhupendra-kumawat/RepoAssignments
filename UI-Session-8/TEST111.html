@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+    <h2>My Todo List</h2>
+
+    <form ng-submit="todoAdd()">
+        <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
+        <input type="text" ng-model="desc" size="50" placeholder="Add New">
+        <input type="date" ng-model="date" size="50" placeholder="Add New">
+        <select ng-model="p">
+     <option value="h">Hard</option>
+     <option value="m">m</option>
+     <option value="l">l</option>
+     </select>
+        <input type="submit" value="Add New">
+    </form>
+
+    <br>
+
+    <div ng-repeat="x in todoList">
+        <input type="checkbox" value="{{x.done}}" ng-model="done">{{x.done}}
+        <span ng-if="x.p == 'm'"><h1 style="background-color:blue;"><span ng-bind="x.date"></span><span ng-bind="x.desc"></span><span ng-bind="x.todoText"></span></h1>
+        </span>
+        <span ng-if="x.p == 'h'"><h1 style="background-color:red;"><span ng-bind="x.date"></span><span ng-bind="x.desc"></span><span ng-bind="x.todoText"></span></h1>
+        </span>
+        <span ng-if="x.p == 'l'"><h1 style="background-color:grey;"><span ng-bind="x.date"></span><span ng-bind="x.desc"></span><span ng-bind="x.todoText"></span></h1>
+        </span>
+        <p><button ng-click="remove(x.done)">Remove marked</button></p>
+        <p><button ng-click="edit(x.done)">edit marked</button></p>
+
+    </div>
+
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('todoCtrl', function($scope) {
+            $scope.todoList = [{
+                todoText: 'Clean House',
+                p: "l",
+                date: "01-10-2019",
+                desc: "rrrrrrrrr",
+                done: 0
+            }];
+            $scope.count = 1;
+            $scope.todoAdd = function() {
+                $scope.todoList.push({
+                    todoText: $scope.todoInput,
+                    p: $scope.p,
+                    date: $scope.date,
+                    desc: $scope.desc,
+                    done: $scope.count++
+                });
+                $scope.todoInput = "";
+                $scope.p = "";
+                $scope.date = "";
+                $scope.desc = "";
+            };
+
+            $scope.remove = function(id) {
+                $scope.todoList.pop(id)
+            };
+            $scope.edit = function(id) {
+                $scope.e = "td";
+            };
+        });
+    </script>
+
+</body>
+
+</html>

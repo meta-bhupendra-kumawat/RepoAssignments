@@ -54,7 +54,7 @@ LinkedList.prototype.deleteNode = function(element) {
 }
 
 LinkedList.prototype.display = function() {
-    if (this..head == null) {
+    if (this.head == null) {
         alert("Linked list is empty");
         return;
     } else {
