@@ -1,0 +1,1133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-1.8 bg-white " style="position: fixed; z-index: 100">
+            <div>
+                <h4 class="text-center my-4"><i class="mdi mdi-assistant"></i><strong>ANNEX</strong></h4>
+            </div>
+            <p class="menu">Main</p>
+            <ul class="accordion list-unstyled" id="accordionMain">
+                <div>
+                    <li id="dashboard">
+                        <button class="btn btn-secondary btn-outline-light text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapsedashboard" aria-expanded="false"
+                            aria-controls="collapsedashboard">
+                            <a class="nav-anchor"><i class="fas fa-laptop px-2"></i>Dashboard</a>
+                            <span class="badge badge-pill badge-primary ml-5">7</span>
+                        </button>
+                    </li>
+                    <ul id="collapsedashboard" class="collapse" aria-labelledby="dashboard"
+                        data-parent="#accordionMain">
+                    </ul>
+                </div>
+                <div>
+                    <li id="advancedUI">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapseUI" aria-expanded="false"
+                            aria-controls="collapseUI">
+                            <a class="nav-anchor"><i class="fas fa-layer-group px-2"></i>Advanced UI<i
+                                    class="mdi mdi-chevron-right  ml-5"></i>
+                            </a></button>
+                    </li>
+                    <ul id="collapseUI" class="collapse" aria-labelledby="advancedUI" data-parent="#accordionMain">
+                        <li class="mx-2 mb-2"><a class="text-muted ">Highlight</a></li>
+                        <li class="m-2"><a class="text-muted ">Rating</a></li>
+                        <li class="m-2"><a class="text-muted ">Alertify</a></li>
+                        <li class="m-2"><a class="text-muted">Range Slider</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <li id="calender">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapseCalender" aria-expanded="false"
+                            aria-controls="collapseCalender">
+                            <a class="nav-anchor"><i class="far fa-calendar-alt px-2"></i> Calender
+                            </a> </button>
+                    </li>
+                    <ul id="collapseCalender" class="collapse" aria-labelledby="calender" data-parent="#accordionMain">
+
+                    </ul>
+                </div>
+
+                <p class="menu">Components</p>
+                <div>
+                    <li id="UI">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapseUIelements" aria-expanded="false"
+                            aria-controls="collapseUIelements">
+                            <a class="nav-anchor"><i class="fas fa-bullseye px-2"></i> UI Elements<i
+                                    class="mdi mdi-chevron-right  ml-5"></i>
+                            </a> </button>
+                    </li>
+                    <ul id="collapseUIelements" class="collapse" aria-labelledby="UI" data-parent="#accordionMain">
+                        <li class="mx-2 mb-2"><a href="#" class="text-muted">Buttons</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Cards</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Tabs & Accordians</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Modals</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Images</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Alerts</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Progess Bars</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Dropdowns</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">LightBox</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Navs</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Pagination</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Popover & Tooltips</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Badge</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Carousel</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Video</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Typography</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Sweet-Alert</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Grid</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <li id="form">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapseForm" aria-expanded="false"
+                            aria-controls="collapseForm">
+                            <a class="nav-anchor"><i class="far fa-clipboard px-2"></i><span class="mr-4"> Forms</span>
+                                <span class="badge badge-pill badge-info  ml-5 ">8</span></a></button>
+                    </li>
+                    <ul id="collapseForm" class="collapse" aria-labelledby="form" data-parent="#accordionMain">
+                        <li class="m-2"><a href="#" class="text-muted">Form Elements</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Form Validation</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Form Advanced</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Form Editor</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Form File Upload</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Form Mask</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Summernote</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Form Xeditable</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <li id="Charts">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapseCharts" aria-expanded="false"
+                            aria-controls="collapseCharts">
+                            <a class="nav-anchor"><i class=" fas fa-tachometer-alt px-2"></i><span class="mr-4">
+                                    Charts</span><i class="mdi mdi-chevron-right  ml-5"></i>
+                            </a> </button>
+                    </li>
+                    <ul id="collapseCharts" class="collapse" aria-labelledby="Charts" data-parent="#accordionMain">
+                        <li class="m-2"><a href="#" class="text-muted">Morris Chart</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Chartist Chart</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Chartjs Chart</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Flot Chart</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">C3 Chart</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Jquery Knob Chart</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <li id="icons">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapseicons" aria-expanded="false"
+                            aria-controls="collapseicons">
+                            <a class="nav-anchor"><i class="fab fa-laravel px-2"></i><span class="mr-4"> Icons</span><i
+                                    class="mdi mdi-chevron-right ml-5"></i>
+                            </a> </button>
+                    </li>
+                    <ul id="collapseicons" class="collapse" aria-labelledby="icons" data-parent="#accordionMain">
+                        <li class="m-2"><a href="#" class="text-muted">Material Design</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">on Icons</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Font Awesome</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Themify Icons</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Dripicons</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Typicons Icons</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <li id="tables">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapsetables" aria-expanded="false"
+                            aria-controls="collapsetables">
+                            <a class="nav-anchor"><i class="fas fa-table px-2"></i>Tables<i
+                                    class="mdi mdi-chevron-right"></i>
+                            </a> </button>
+                    </li>
+                    <ul id="collapsetables" class="collapse" aria-labelledby="tables" data-parent="#accordionMain">
+
+                        <li class="m-2"><a href="#" class="text-muted">Basic Tables</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Data Table</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Responsive Table</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Editable Table</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="menu">Extras</p>
+                <div>
+                    <li id="maps">
+                        <button class="btn btn-secondary btn-outline-light text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapseMaps" aria-expanded="false"
+                            aria-controls="collapseMaps">
+                            <a class="nav-anchor"><i class="fas fa-map-marker-alt px-2"></i><span class="mr-4">
+                                    Maps</span>
+                                <span class="badge badge-pill badge-danger ml-5">2</span></a> </button>
+                    </li>
+                    <ul id="collapseMaps" class="collapse" aria-labelledby="maps" data-parent="#accordionMain">
+
+                        <li class="m-2"><a href="#" class="text-muted">Google Map</a></li>
+                        <li class="m-2"><a href="#" class="text-muted">Vector Map</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <li id="pages">
+                        <button class="btn btn-secondary btn-outline-light  text-dark mb-2" type="button"
+                            data-toggle="collapse" data-target="#collapsepages" aria-expanded="false"
+                            aria-controls="collapsepages">
+                            <a class="nav-anchor"><i class="fas fa-file px-2"></i><span class="mr-4">Pages</span><i
+                                    class="mdi mdi-chevron-right ml-5"></i>
+                            </a> </button>
+                    </li>
+                    <ul id="collapsepages" class="collapse" aria-labelledby="pages" data-parent="#accordionMain">
+                        <li class="m-2"><a href="#" class="text-muted">Login</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Register</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Recover Password</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Lock Screen</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Blank Page</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Error 404</a>
+                        </li>
+                        <li class="m-2"><a href="#" class="text-muted">Error 500</a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="col-10 " style="background-color: #EFF3F6;margin-left: 16.1rem">
+            <header class="row">
+                <!--Search bar                -->
+                <div class="col-2 searchField m-4 py-1">
+                    <input type="text" placeholder="Search..." />
+                    <i class="fa fa-search"></i>
+                </div>
+                <!--               navigation bar-->
+                <nav class="col-9 nav_bar text-white">
+                    <ul class="list-unstyled d-flex pt-3" id="top_navbar_accordian">
+                        <li class="p-2">
+                            <div class="dropdown">
+                                <a href="#" class="d-flex text-white" role="button" id="langauge_menu_link"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    <div>English</div> 
+                                    <img src="images/us_flag.jpg" alt="flag" class="pl-2"  style="height: 15px; width: auto;"/>
+                                </a>
+                                <ul class="dropdown-menu list-unstyled dropdown-menu-right"
+                                    aria-labelledby="langauge_menu_link" id="language_submenu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="text-dark d-flex justify-content-between">
+                                            Italian
+                                            <img src="images/england_flag.png" alt="flag" class="pl-2" />
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="text-dark d-flex justify-content-between">
+                                            French
+                                            <img src="images/england_flag.png" alt="flag" class="pl-2" />
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="text-dark d-flex justify-content-between">
+                                            Spanish
+                                            <img src="images/england_flag.png" alt="flag" class="pl-2" />
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="text-dark d-flex justify-content-between">
+                                            Russian
+                                            <img src="images/england_flag.png" alt="flag" class="pl-2" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="p-2">
+                            <div class="dropdown mr-1">
+                                <a href="#" class="d-flex text-white" role="button" id="message_link"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-envelope"></i>
+                                    <span class="badge bg-danger badge-upon-icon">5</span>
+                                </a>
+                                <ul class="dropdown-menu list-unstyled dropdown-menu-right"
+                                    aria-labelledby="message_link">
+                                    <li class="dropdown-item clearfix">
+                                        <strong class="float-left">Messages</strong>
+                                        <span class="badge float-right bg-danger">745</span>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <img src="images/friend_profile.jpg" alt="profile" class="rounded-circle" />
+                                        <div>
+                                            <strong>Charles M. Jones</strong>
+                                            <p>Dummy text of the printing and typesetting industry</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <img src="images/friend_profile.jpg" alt="profile" class="rounded-circle" />
+                                        <div>
+                                            <strong>Charles M. Jones</strong>
+                                            <p>Dummy text of the printing and typesetting industry</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <img src="images/friend_profile.jpg" alt="profile" class="rounded-circle" />
+                                        <div>
+                                            <strong>Charles M. Jones</strong>
+                                            <p>Dummy text of the printing and typesetting industry</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <a>View all</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="p-2">
+                            <div class="dropdown mr-1">
+                                <a href="#" class="d-flex text-white" role="button" id="notification_link"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="badge bg-success badge-upon-icon">23</span>
+                                </a>
+                                <ul class="dropdown-menu list-unstyled dropdown-menu-right"
+                                    aria-labelledby="notification_link">
+                                    <li class="dropdown-item clearfix">
+                                        <strong class="float-left">Notifications</strong>
+                                        <span class="badge float-right bg-danger">87</span>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <i class="fa fa-shopping-cart p-2"></i>
+                                        <div>
+                                            <strong>Your Order is placed</strong>
+                                            <p>Dummy text of the printing and typesetting industry</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <i class="fa fa-comment-alt p-2"></i>
+                                        <div>
+                                            <strong>New message recieved</strong>
+                                            <p>Dummy text of the printing and typesetting industry</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <i class="fa fa-glass-martini-alt p-2"></i>
+                                        <div>
+                                            <strong>Your item is shipped</strong>
+                                            <p>Dummy text of the printing and typesetting industry</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item d-flex">
+                                        <a>View all</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="p-0">
+                            <div class="dropdown">
+                                <a href="#" class="d-flex text-white" role="button" id="profile_menu_link"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/user_profile.jpg" alt="user" class="rounded-circle profile_img" />
+                                </a>
+                                <ul class="dropdown-menu list-unstyled dropdown-menu-right"
+                                    aria-labelledby="profile_menu_link">
+                                    <li class="dropdown-item my-2">
+                                        <strong>Welcome</strong>
+                                    </li>
+                                    <li class="dropdown-item my-2">
+                                        <a href="#" class="text-dark">
+                                            <i class="fas fa-user mx-2"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item my-2">
+                                        <a href="#" class="text-dark">
+                                            <i class="fas fa-wallet mx-2"></i> My wallet
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item my-2">
+                                        <a href="#" class="text-dark">
+                                            <i class="fas fa-cog mx-2"></i> Settings
+                                            <span class="badge bg-success mx-2">5</span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item my-2">
+                                        <a href="#" class="text-dark">
+                                            <i class="fas fa-unlock-alt mx-2"></i> Lock Screen
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item my-2">
+                                        <a href="#" class="text-dark">
+                                            <i class="fas fa-sign-out-alt mx-2"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="clearfix my-3 ">
+                <p class="float-left font-weight-bold" style="font-size: 1.7rem">Dashboard</p>
+                <p class="float-right text-muted">Annex / Dashboard</p>
+            </section>
+
+            <div class="row px-4 my-4">
+                <!-- Column -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <div class="col-3 align-self-center">
+                                    <div class="round"><i class="mdi mdi-webcam"></i></div>
+                                </div>
+                                <div class="col-6 align-self-center text-center">
+                                    <div class="m-l-10">
+                                        <h5 class="mt-0 round-inner">$18090</h5>
+                                        <p class="mb-0 text-muted">Visits Today</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 align-self-end align-self-center">
+                                    <h6 class="m-0 float-right text-center text-danger"><i
+                                            class="mdi mdi-arrow-down"></i> <span>5.26%</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Column -->
+                <!-- Column -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <div class="col-3 align-self-center">
+                                    <div class="round"><i class="mdi mdi-account-multiple-plus"></i></div>
+                                </div>
+                                <div class="col-6 text-center align-self-center">
+                                    <div class="m-l-10">
+                                        <h5 class="mt-0 round-inner">562</h5>
+                                        <p class="mb-0 text-muted">New Users</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 align-self-end align-self-center">
+                                    <h6 class="m-0 float-right text-center text-success"><i
+                                            class="mdi mdi-arrow-up"></i> <span>8.68%</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Column -->
+                <!-- Column -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <div class="col-3 align-self-center">
+                                    <div class="round"><i class="mdi mdi-basket"></i></div>
+                                </div>
+                                <div class="col-6 align-self-center text-center">
+                                    <div class="m-l-10">
+                                        <h5 class="mt-0 round-inner">7514</h5>
+                                        <p class="mb-0 text-muted">New Orders</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 align-self-end align-self-center">
+                                    <h6 class="m-0 float-right text-center text-danger"><i
+                                            class="mdi mdi-arrow-down"></i> <span>2.35%</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Column -->
+                <!-- Column -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <div class="col-3 align-self-center">
+                                    <div class="round"><i class="mdi mdi-rocket"></i></div>
+                                </div>
+                                <div class="col-6 align-self-center text-center">
+                                    <div class="m-l-10">
+                                        <h5 class="mt-0 round-inner">$32874</h5>
+                                        <p class="mb-0 text-muted">Total Sales</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 align-self-end align-self-center">
+                                    <h6 class="m-0 float-right text-center text-success"><i
+                                            class="mdi mdi-arrow-up"></i> <span>2.35%</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Column -->
+            </div>
+
+            <!-- <section class="row mx-4 my-4">
+                <div class=" col-md-3 card bg-white shadow-sm py-4">
+                    <div class="card-body d-flex">
+                        <div class="px-3 rounded-circle py-2" style="background-color: #E1E4FB">
+                            <i class="mdi mdi-webcam fa-2x" style="color: #5B6BE8"></i>
+                        </div>
+                        <div class="px-4">
+                            <h5 class="card-title">$18090</h5>
+                            <p class="card-text text-muted">Visits Today</p>
+                        </div>
+                        <div style="color: #EC536C">
+                            <div><i class="fas fa-arrow-down pl-2"></i></div>
+                            <div><strong>5.26%</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 card bg-white shadow-sm py-4">
+                    <div class="card-body d-flex">
+                        <div class="px-3 rounded-circle py-2" style="background-color: #E1E4FB">
+                            <i class="mdi mdi-account-multiple-plus fa-2x" style="color: #5B6BE8"></i>
+                        </div>
+                        <div class="px-4">
+                            <h5 class="card-title text-center">562</h5>
+                            <p class="card-text text-muted">New Users</p>
+                        </div>
+                        <div style="color:#4FB39E">
+                            <div><i class="fas fa-arrow-up pl-2"></i></div>
+                            <div><strong>8.68%</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 card bg-white shadow-sm py-4">
+                    <div class="card-body d-flex">
+                        <div class="px-3 rounded-circle py-2" style="background-color: #E1E4FB">
+                            <i class="mdi mdi-basket fa-2x" style="color: #5B6BE8"></i>
+                        </div>
+                        <div class="px-4">
+                            <h5 class="card-title text-center">7514</h5>
+                            <p class="card-text text-muted">New Orders</p>
+                        </div>
+                        <div style="color: #EC536C">
+                            <div><i class="fas fa-arrow-down pl-2"></i></div>
+                            <div><strong>2.35%</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 card bg-white shadow-sm py-4">
+                    <div class="card-body d-flex">
+                        <div class="px-3 rounded-circle py-2" style="background-color: #E1E4FB">
+                            <i class="mdi mdi-rocket fa-2x" style="color: #5B6BE8"></i>
+                        </div>
+                        <div class="px-4">
+                            <h5 class="card-title text-center">$32874</h5>
+                            <p class="card-text text-muted">Total Sales</p>
+                        </div>
+                        <div style="color: #4FB39E">
+                            <div><i class="fas fa-arrow-up pl-2"></i></div>
+                            <div><strong>2.35%</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- <section class="row  mx-4 my-4">
+                <div class="col-md-8  text-center  card shadow-sm bg-white">
+                    <p class="float-left m-2" style="font-size: 1.1rem"><strong>Overview</strong></p>
+                    <div id="line-chart" style="height:600px"></div>
+                </div>
+                <div class="col-md-4  card shadow-sm bg-white">
+                    <div class="clearfix">
+                        <p class="float-left" style="font-size: 1.1rem"><strong>Revenue by Country</strong></p>
+                        <button class="float-right rounded btn btn-sm"
+                            style="background-color: #6B79EA;color: white">More Info</button>
+                    </div>
+                    <div>
+                        <div class="text-center"><i class="fas fa-circle country-circle"
+                                style="color: #5B6BE8"></i>Canada<i class="fas fa-circle country-circle"
+                                style="color:#40A4F1"></i> USA <i class="fas fa-circle country-circle"
+                                style="color:#C1C5E2"></i>London</div>
+                    </div>
+                    <div id="pie-chart"></div>
+                </div>
+            </section> -->
+
+            <div class="row px-4 mb-4">
+                <div class="col-md-12 col-lg-12 col-xl-8">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h5 class="header-title pb-3 mt-0">Overview</h5>
+                            <!-- <div id="multi-line-chart"
+                                style="height: 400px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                 -->
+
+                                 <div class=" text-center bg-white">
+                                    <!-- <p class="float-left m-2" style="font-size: 1.1rem"><strong>Overview</strong></p> -->
+                                    <div id="line-chart" style="height:600px"></div>
+                                </div>
+                                <!-- <div class="col-md-4  card shadow-sm bg-white">
+                                    <div class="clearfix">
+                                        <p class="float-left" style="font-size: 1.1rem"><strong>Revenue by Country</strong></p>
+                                        <button class="float-right rounded btn btn-sm"
+                                            style="background-color: #6B79EA;color: white">More Info</button>
+                                    </div>
+                                    <div>
+                                        <div class="text-center"><i class="fas fa-circle country-circle"
+                                                style="color: #5B6BE8"></i>Canada<i class="fas fa-circle country-circle"
+                                                style="color:#40A4F1"></i> USA <i class="fas fa-circle country-circle"
+                                                style="color:#C1C5E2"></i>London</div>
+                                    </div>
+                                    
+                                </div> -->
+
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-4">
+                    <div class="card m-b-30">
+                        <div class="card-body"><a href="" class="btn btn-primary btn-sm float-right">More Info</a>
+                            <h5 class="header-title mt-0 pb-3">Revenue By Country</h5>
+                            <ul class="list-unstyled list-inline text-center">
+                                <li class="list-inline-item">
+                                    <p><i class="mdi mdi-checkbox-blank-circle text-primary mr-2"></i>Canada</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p><i class="mdi mdi-checkbox-blank-circle text-info mr-2"></i>USA</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p><i class="mdi mdi-checkbox-blank-circle text-greylight mr-2"></i>London</p>
+                                </li>
+                            </ul>
+
+                            <div id="pie-chart"></div>
+                            <!-- <div id="morris-donut-chart" style="height:345px;"><svg height="345" version="1.1"
+                                    width="346" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    style="overflow: hidden; position: relative; left: -0.7875px; top: -0.6px;">
+                                    <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël
+                                        2.1.2</desc>
+                                    <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                                    <path fill="none" stroke="#40a4f1"
+                                        d="M173.194,280.8333333333333A108.33333333333333,108.33333333333333,0,0,0,275.49079388402663,208.15777716235374"
+                                        stroke-width="2" opacity="0"
+                                        style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path>
+                                    <path fill="#40a4f1" stroke="#ffffff"
+                                        d="M173.194,283.8333333333333A111.33333333333333,111.33333333333333,0,0,0,278.3236281761997,209.14522329915738L321.9178003390849,224.3409221821912A157.5,157.5,0,0,1,173.194,330Z"
+                                        stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                    <path fill="none" stroke="#5b6be8"
+                                        d="M275.49079388402663,208.15777716235374A108.33333333333333,108.33333333333333,0,0,0,76.01316703032303,124.62519645543327"
+                                        stroke-width="2" opacity="1"
+                                        style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path>
+                                    <path fill="#5b6be8" stroke="#ffffff"
+                                        d="M278.3236281761997,209.14522329915738A111.33333333333333,111.33333333333333,0,0,0,73.32200550193198,123.29943266496835L27.422750545484547,100.68779468314989A162.5,162.5,0,0,1,326.63919082604,225.9866657435306Z"
+                                        stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                    <path fill="none" stroke="#c1c5e2"
+                                        d="M76.01316703032303,124.62519645543327A108.33333333333333,108.33333333333333,0,0,0,173.15996608014586,280.83332798729765"
+                                        stroke-width="2" opacity="0"
+                                        style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path>
+                                    <path fill="#c1c5e2" stroke="#ffffff"
+                                        d="M73.32200550193198,123.29943266496835A111.33333333333333,111.33333333333333,0,0,0,173.15902360236527,283.83332783925357L173.14451991651976,329.9999922276866A157.5,157.5,0,0,1,31.908019759469653,102.89740100059143Z"
+                                        stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                                    <text x="173.194" y="162.5" text-anchor="middle" font-family="&quot;Arial&quot;"
+                                        font-size="15px" stroke="none" fill="#000000"
+                                        style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;"
+                                        font-weight="800" transform="matrix(2.5048,0,0,2.5048,-260.9212,-260.8036)"
+                                        stroke-width="0.3992307692307693">
+                                        <tspan dy="6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Canada
+                                        </tspan>
+                                    </text><text x="173.194" y="182.5" text-anchor="middle"
+                                        font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000"
+                                        style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;"
+                                        transform="matrix(2.2547,0,0,2.2547,-217.4528,-218.9526)"
+                                        stroke-width="0.4435096153846154">
+                                        <tspan dy="4.8046875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30
+                                        </tspan>
+                                    </text>
+                                </svg></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="row mb-4">
+                <div class="col-md-4 pr-4">
+                    <div class="bg-info text-white text-center rounded p-4 mb-4 ml-4">
+                        <i class="fab fa-twitter fa-3x p-2"></i>
+                        <P class="p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+                    </div>
+                    <div class="bg-primary text-white text-center rounded p-4 my-3 ml-4">
+                        <i class=" fab fa-facebook-f fa-3x p-2"></i>
+                        <P class="p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-white container rounded mb-4 p-3">
+                    <div class="row p-2">
+
+                        <div class="row container-fluid text-center">
+                            <div class="col-6">
+                                <h5><i class="mdi mdi-database mr-2 text-primary font-20"></i> 5 TB</h5>
+                                <h6 class="text-lightdark">Bandwidth usage</h6><span class="text-muted"><small>June
+                                        2018</small></span>
+                            </div>
+                            <div class="col-6">
+                                <h5><i class="mdi mdi-download mr-2 text-success font-20"></i>5412</h5>
+                                <h6 class="text-lightdark">Download count</h6><span class="text-muted"><small>June
+                                        2018</small></span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-md-6 text-center">
+                            <i class="fas fa-database text-primary"></i>
+                            <strong>5 TB</strong>
+                            <p class="font-weight-bold pt-2">Bandwidth Usage</p>
+                            <p class="text-muted">June 2018</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <i class="fa fa-arrow-alt-to-bottom"></i>
+                            <strong>5412</strong>
+                            <p class="font-weight-bold pt-2">Download Count</p>
+                            <p class="text-muted">June 2018</p>
+                        </div> -->
+                        <svg height="310" version="1.1" width="384" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            style="overflow: hidden; position: relative; left: -0.4375px; top: -0.265625px;">
+                            <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2
+                            </desc>
+                            <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                            <path fill="#4fb6e3" stroke="none"
+                                d="M25,220C36.922595815408684,194,60.76778744622605,119.24555403556772,72.69038326163474,116C84.64564372311303,112.74555403556772,108.55616464606962,205.390560875513,120.51142510754791,194C132.4340209229566,182.640560875513,156.27921255377396,29.875,168.20180836918263,25C180.1244041845913,20.125,203.9695958154087,146.875,215.89219163081736,155C227.81478744622603,163.125,251.65997907704343,85.13166894664843,263.5825748924521,90C275.5378353539304,94.88166894664843,299.44835627688695,187.49110807113544,311.40361673836526,194C323.3262125537739,200.49110807113544,347.1714041845913,155,359.094,142L359.094,285L25,285Z"
+                                fill-opacity="0.1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.1;"></path>
+                            <path fill="none" stroke="#03a9f3"
+                                d="M25,220C36.922595815408684,194,60.76778744622605,119.24555403556772,72.69038326163474,116C84.64564372311303,112.74555403556772,108.55616464606962,205.390560875513,120.51142510754791,194C132.4340209229566,182.640560875513,156.27921255377396,29.875,168.20180836918263,25C180.1244041845913,20.125,203.9695958154087,146.875,215.89219163081736,155C227.81478744622603,163.125,251.65997907704343,85.13166894664843,263.5825748924521,90C275.5378353539304,94.88166894664843,299.44835627688695,187.49110807113544,311.40361673836526,194C323.3262125537739,200.49110807113544,347.1714041845913,155,359.094,142"
+                                stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                            <circle cx="25" cy="220" r="0" fill="#03a9f3" stroke="#ffffff" stroke-width="1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="72.69038326163474" cy="116" r="0" fill="#03a9f3" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="120.51142510754791" cy="194" r="0" fill="#03a9f3" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="168.20180836918263" cy="25" r="0" fill="#03a9f3" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="215.89219163081736" cy="155" r="0" fill="#03a9f3" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="263.5825748924521" cy="90" r="0" fill="#03a9f3" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="311.40361673836526" cy="194" r="0" fill="#03a9f3" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="359.094" cy="142" r="0" fill="#03a9f3" stroke="#ffffff" stroke-width="1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <path fill="#1ed4a7" stroke="none"
+                                d="M25,259C36.922595815408684,246,60.76778744622605,207,72.69038326163474,207C84.64564372311303,207,108.55616464606962,267.1361149110807,120.51142510754791,259C132.4340209229566,250.8861149110807,156.27921255377396,148.5,168.20180836918263,142C180.1244041845913,135.5,203.9695958154087,202.125,215.89219163081736,207C227.81478744622603,211.875,251.65997907704343,174.50889192886456,263.5825748924521,181C275.5378353539304,187.50889192886456,299.44835627688695,254.11833105335157,311.40361673836526,259C323.3262125537739,263.8683310533516,347.1714041845913,229.75,359.094,220L359.094,285L25,285Z"
+                                fill-opacity="0.1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.1;"></path>
+                            <path fill="none" stroke="#00c292"
+                                d="M25,259C36.922595815408684,246,60.76778744622605,207,72.69038326163474,207C84.64564372311303,207,108.55616464606962,267.1361149110807,120.51142510754791,259C132.4340209229566,250.8861149110807,156.27921255377396,148.5,168.20180836918263,142C180.1244041845913,135.5,203.9695958154087,202.125,215.89219163081736,207C227.81478744622603,211.875,251.65997907704343,174.50889192886456,263.5825748924521,181C275.5378353539304,187.50889192886456,299.44835627688695,254.11833105335157,311.40361673836526,259C323.3262125537739,263.8683310533516,347.1714041845913,229.75,359.094,220"
+                                stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                            <circle cx="25" cy="259" r="0" fill="#00c292" stroke="#ffffff" stroke-width="1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="72.69038326163474" cy="207" r="0" fill="#00c292" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="120.51142510754791" cy="259" r="0" fill="#00c292" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="168.20180836918263" cy="142" r="0" fill="#00c292" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="215.89219163081736" cy="207" r="0" fill="#00c292" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="263.5825748924521" cy="181" r="0" fill="#00c292" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="311.40361673836526" cy="259" r="0" fill="#00c292" stroke="#ffffff"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="359.094" cy="220" r="0" fill="#00c292" stroke="#ffffff" stroke-width="1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                        </svg>
+                        <!-- <img src="images/graph.JPG" alt="graph" width="100%" /> -->
+                    </div>
+                </div>
+                <div class="col-md-4 container">
+                    <img class="pl-3 pr-4" src="images/weather.JPG" class="row" alt="weather" width="100%"
+                        style="height: auto;" />
+                    <div class="row bg-primary text-center text-white text-weight-bold mr-4 ml-3 py-2">
+                        <div class="col-3">
+                            <i class="fas fa-cloud-sun fa-3x py-3"></i>
+                            <p class="m-0 pb-0"><strong>SUNDAY</strong></p>
+                            <p class="m-0 p-0"><strong>25th</strong></p>
+                        </div>
+                        <div class="col-3">
+                            <p><strong>32&deg</strong></p>
+                            <p>Partly cloudy</p>
+                            <p>15km/h-37%</p>
+                        </div>
+                        <div class="col-3">
+                            <p><strong>MON</strong></p>
+                            <i class="fa fa-cloud fa-2x py-3"></i>
+                            <p><strong>38&deg</strong></p>
+                        </div>
+                        <div class="col-3">
+                            <p><strong>TUE</strong></p>
+                            <i class="fa fa-cloud fa-2x py-3"></i>
+                            <p><strong>32&deg</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row ml-2">
+                <div class="col-md-8 align-self-center">
+                    <div class="card bg-white mb-2">
+                        <div class="card-body new-user">
+                            <h5 class="header-title mb-4 mt-0">Members Profiles</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0" style="width:50px;">Member</th>
+                                            <th class="border-top-0">Name</th>
+                                            <th class="border-top-0">Country</th>
+                                            <th class="border-top-0">Earnings</th>
+                                            <th class="border-top-0">Sales</th>
+                                            <th class="border-top-0">Reviews</th>
+                                            <th class="border-top-0">Progress</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img class="rounded-circle" src="images/friend_profile.jpg" alt="user"
+                                                    width="40"> </td>
+                                            <td>
+                                                <a href="#">Ruby T. Curd</a>
+                                            </td>
+                                            <td>
+                                                <img src="images/england_flag.png" alt="" style="width:30px">
+                                            </td>
+                                            <td>$100</td>
+                                            <td>10</td>
+                                            <td>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star-half text-warning"></i>
+                                                <i class="mdi mdi-star-outline text-warning"></i>
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height:8px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar"
+                                                        aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 94%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="rounded-circle" src="images/friend_profile.jpg" alt="user"
+                                                    width="40"> </td>
+                                            <td>
+                                                <a href="#">William A. Johnson</a>
+                                            </td>
+                                            <td>
+                                                <img src="images/england_flag.png" alt="" style="width:30px">
+                                            </td>
+                                            <td>$490</td>
+                                            <td>24</td>
+                                            <td>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star-half text-warning"></i>
+                                                <i class="mdi mdi-star-outline text-warning"></i>
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height:8px;">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 38%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="rounded-circle" src="images/friend_profile.jpg" alt="user"
+                                                    width="40"> </td>
+                                            <td>
+                                                <a href="#">Bobby M. Gray</a>
+                                            </td>
+                                            <td>
+                                                <img src="images/england_flag.png" alt="" style="width:30px">
+                                            </td>
+                                            <td>$380</td>
+                                            <td>19</td>
+                                            <td>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star-half text-warning"></i>
+                                                <i class="mdi mdi-star-outline text-warning"></i>
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height:8px;">
+                                                    <div class="progress-bar bg-dark" role="progressbar"
+                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width:65%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="rounded-circle" src="images/friend_profile.jpg" alt="user"
+                                                    width="40"> </td>
+                                            <td>
+                                                <a href="#">Robert N. Carlile</a>
+                                            </td>
+                                            <td>
+                                                <img src="images/england_flag.png" alt="" style="width:30px">
+                                            </td>
+                                            <td>$450</td>
+                                            <td>30</td>
+                                            <td>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star-half text-warning"></i>
+                                                <i class="mdi mdi-star-outline text-warning"></i>
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height:8px;">
+                                                    <div class="progress-bar bg-danger" role="progressbar"
+                                                        aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 88%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="rounded-circle" src="images/friend_profile.jpg" alt="user"
+                                                    width="40"> </td>
+                                            <td>
+                                                <a href="#">Ruby T. Curd</a>
+                                            </td>
+                                            <td>
+                                                <img src="images/england_flag.png" alt="" style="width:30px">
+                                            </td>
+                                            <td>$500</td>
+                                            <td>40</td>
+                                            <td>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star text-warning"></i>
+                                                <i class="mdi mdi-star-half text-warning"></i>
+                                                <i class="mdi mdi-star-outline text-warning"></i>
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height:8px;">
+                                                    <div class="progress-bar l-blue" role="progressbar"
+                                                        aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 17%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-white mb-2 scroll new-user-card" style="HEIGHT: 468PX;">
+                        <h5 class="header-title mt-4 pl-4 mb-4">New Users</h5>
+                        <ul class="list-unstyled mb-0 pr-3">
+                            <li class="p-3">
+                                <div class="media">
+                                    <div class="thumb float-left">
+                                        <a href="#">
+                                            <img class=" rounded-circle" src="images/friend_profile.jpg"
+                                                style="width:50px" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading mb-0">Ruby T. Curd
+                                            <i class="fa fa-circle text-success mr-1 float-right"></i>
+                                        </p>
+                                        <small class="float-right text-muted">Now</small>
+                                        <small class="text-muted">Newyork</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="media">
+                                    <div class="thumb float-left">
+                                        <a href="#">
+                                            <img class=" rounded-circle" src="images/friend_profile.jpg"
+                                                style="width:50px" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading mb-0">William A. Johnson
+                                            <i class="fa fa-circle text-success mr-1 float-right"></i>
+                                        </p>
+                                        <small class="float-right text-muted">Now</small>
+                                        <small class="text-muted">California</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="media">
+                                    <div class="thumb float-left">
+                                        <a href="#">
+                                            <img class=" rounded-circle" src="images/friend_profile.jpg"
+                                                style="width:50px" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading mb-0">Robert N. Carlile
+                                            <i class="fa fa-circle text-danger mr-1 float-right"></i>
+                                        </p>
+                                        <small class="float-right text-muted">10 min ago</small>
+                                        <small class="text-muted">India</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="media">
+                                    <div class="thumb float-left">
+                                        <a href="#">
+                                            <img class=" rounded-circle" src="images/friend_profile.jpg"
+                                                style="width:50px" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading mb-0">Bobby M. Gray
+                                            <i class="fa fa-circle text-success mr-1 float-right"></i>
+                                        </p>
+                                        <small class="float-right text-muted">Now</small>
+                                        <small class="text-muted">Australia</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="media">
+                                    <div class="thumb float-left">
+                                        <a href="#">
+                                            <img class=" rounded-circle" src="images/friend_profile.jpg"
+                                                style="width:50px" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading mb-0">Ruby T. Curd
+                                            <i class="fa fa-circle text-danger mr-1 float-right"></i>
+                                        </p>
+                                        <small class="float-right text-muted">36 min ago</small>
+                                        <small class="text-muted">New Zealand</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="media">
+                                    <div class="thumb float-left">
+                                        <a href="#">
+                                            <img class=" rounded-circle" src="images/friend_profile.jpg"
+                                                style="width:50px" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading mb-0">Robert N. Carlile
+                                            <i class="fa fa-circle text-success mr-1 float-right"></i>
+                                        </p>
+                                        <small class="float-right text-muted">Now</small>
+                                        <small class="text-muted">India</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-3">
+                                <div class="media">
+                                    <div class="thumb float-left">
+                                        <a href="#">
+                                            <img class=" rounded-circle" src="images/friend_profile.jpg"
+                                                style="width:50px" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading mb-0">Bobby M. Gray
+                                            <i class="fa fa-circle text-danger mr-1 float-right"></i>
+                                        </p>
+                                        <small class="float-right text-muted">58 min ago</small>
+                                        <small class="text-muted">Australia</small>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="row bg-white p-3" style="background-color: #F9F9F9">
+                <div class="col-12">
+                    <p class="text-center"> © 2018 Annex by Mannatthemes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
